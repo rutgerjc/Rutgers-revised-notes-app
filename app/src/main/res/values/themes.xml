@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RutgersRevisedNotesapp" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="PracticeColor" parent="MaterialAlertDialog.Material3.Title.Icon">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.RutgersRevisedNotesapp" parent="Base.Theme.RutgersRevisedNotesapp" />
+</resources>
