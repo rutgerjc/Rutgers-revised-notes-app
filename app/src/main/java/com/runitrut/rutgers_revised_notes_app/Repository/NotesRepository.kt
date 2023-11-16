@@ -1,5 +1,7 @@
-package com.runitrut.rutgers_revised_notes_app
+package com.runitrut.rutgers_revised_notes_app.Repository
 
+import com.runitrut.rutgers_revised_notes_app.Model.Note
+import com.runitrut.rutgers_revised_notes_app.Room.NotesDao
 import kotlinx.coroutines.flow.Flow
 
 class NotesRepository(private val notesDao: NotesDao) {

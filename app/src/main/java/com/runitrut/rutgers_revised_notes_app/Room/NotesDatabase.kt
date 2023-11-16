@@ -1,9 +1,10 @@
-package com.runitrut.rutgers_revised_notes_app
+package com.runitrut.rutgers_revised_notes_app.Room
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.runitrut.rutgers_revised_notes_app.Model.Note
 
 @Database(entities = [Note::class], version = 1, exportSchema = false)
 abstract class NotesDatabase : RoomDatabase(){
@@ -17,7 +18,7 @@ abstract class NotesDatabase : RoomDatabase(){
         fun getDatabase(context: Context): NotesDatabase {
             // if INSTANCE isn't null, then return it,
             // if it is, then create the database
-            return INSTANCE?: synchronized(this){
+            return INSTANCE ?: synchronized(this){
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     NotesDatabase::class.java,

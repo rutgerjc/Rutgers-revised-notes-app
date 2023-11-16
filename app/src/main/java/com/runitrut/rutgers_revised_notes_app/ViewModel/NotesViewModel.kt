@@ -1,10 +1,12 @@
-package com.runitrut.rutgers_revised_notes_app
+package com.runitrut.rutgers_revised_notes_app.ViewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import com.runitrut.rutgers_revised_notes_app.Model.Note
+import com.runitrut.rutgers_revised_notes_app.Repository.NotesRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -12,13 +14,13 @@ class NotesViewModel(private val repository: NotesRepository): ViewModel() {
 
     var noteItem: LiveData<List<Note>> = repository.allNotes.asLiveData()
 
-    fun deleteNote ( note:Note) = viewModelScope.launch(Dispatchers.IO) {
+    fun deleteNote ( note: Note) = viewModelScope.launch(Dispatchers.IO) {
         repository.delete(note)
     }
-    fun updateNote ( note:Note) = viewModelScope.launch(Dispatchers.IO) {
+    fun updateNote ( note: Note) = viewModelScope.launch(Dispatchers.IO) {
         repository.update(note)
     }
-    fun addNote ( note:Note) = viewModelScope.launch(Dispatchers.IO) {
+    fun addNote ( note: Note) = viewModelScope.launch(Dispatchers.IO) {
         repository.insert(note)
     }
 }

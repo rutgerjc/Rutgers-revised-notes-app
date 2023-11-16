@@ -1,4 +1,4 @@
-package com.runitrut.rutgers_revised_notes_app
+package com.runitrut.rutgers_revised_notes_app.Model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

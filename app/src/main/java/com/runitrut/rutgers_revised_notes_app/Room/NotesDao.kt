@@ -1,4 +1,4 @@
-package com.runitrut.rutgers_revised_notes_app
+package com.runitrut.rutgers_revised_notes_app.Room
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -6,6 +6,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
+import com.runitrut.rutgers_revised_notes_app.Model.Note
 import kotlinx.coroutines.flow.Flow
 
 @Dao

@@ -1,4 +1,4 @@
-package com.runitrut.rutgers_revised_notes_app
+package com.runitrut.rutgers_revised_notes_app.View
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.viewModels
+import com.runitrut.rutgers_revised_notes_app.ViewModel.NotesViewModel
+import com.runitrut.rutgers_revised_notes_app.ViewModel.NotesViewModelFactory
+import com.runitrut.rutgers_revised_notes_app.Model.Note
+import com.runitrut.rutgers_revised_notes_app.NotesApplication
+import com.runitrut.rutgers_revised_notes_app.R
 import java.text.SimpleDateFormat
 import java.util.Date
 

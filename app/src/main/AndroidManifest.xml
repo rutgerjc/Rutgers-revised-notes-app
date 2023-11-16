@@ -14,10 +14,10 @@
         android:theme="@style/Theme.RutgersRevisedNotesapp"
         tools:targetApi="31">
         <activity
-            android:name=".AddEditNoteActivity"
+            android:name=".View.AddEditNoteActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.runitrut.rutgers_revised_notes_app
+package com.runitrut.rutgers_revised_notes_app.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.runitrut.rutgers_revised_notes_app.Model.Note
+import com.runitrut.rutgers_revised_notes_app.R
 
 class NotesRVAdapter(
     val context: Context,
@@ -64,10 +66,10 @@ class NotesRVAdapter(
 
 interface NoteClickDeleteInterface{
     // uses @Delete for the RoomDB
-    fun onDeleteIconClick(note:Note)
+    fun onDeleteIconClick(note: Note)
 }
 interface NoteClickInterface{
     // interface for clicking action
     // on recycler view item for updating it.
-    fun onNoteClick(note:Note)
+    fun onNoteClick(note: Note)
 }
